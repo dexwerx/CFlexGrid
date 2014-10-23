@@ -266,12 +266,12 @@ Public Property Get FlexGrid() As MSHFlexGrid
     Set FlexGrid = m_Grid
 End Property
 
-Public Property Get PageCols() As Long
-    PageCols = FlexPageSizeH(m_Grid)
+Public Property Get PageCols(Optional UseCached as Boolean = True) As Long
+    PageCols = FlexPageSizeH(m_Grid, UseCached)
 End Property
 
-Public Property Get PageRows() As Long
-    PageRows = FlexPageSize(m_Grid)
+Public Property Get PageRows(Optional UseCached as Boolean = True) As Long
+    PageRows = FlexPageSize(m_Grid, UseCached)
 End Property
 
 Private Function FlexPageSize(Grid As MSHFlexGrid, Optional UseCached As Boolean = False) As Long
