@@ -53,7 +53,6 @@ Private Type HighlightColor
     Modulus     As Long
 End Type
 
-Private Declare Function PostMessageW Lib "user32" (ByVal hWnd As Long, uMsg As Long, wParam As Long, lParam As Long) As Long
 Private Declare Function SetScrollInfo Lib "user32" (ByVal hWnd As Long, ByVal fnBar As Long, ByRef lpsi As SCROLLINFO, ByVal fRedraw As Boolean) As Long
 Private Declare Function GetScrollInfo Lib "user32" (ByVal hWnd As Long, ByVal fnBar As Long, lpsi As SCROLLINFO) As Long
 Private Declare Function SystemParametersInfoW Lib "user32" (ByVal uAction As Long, ByVal uParam As Long, ByRef lpvParam As Any, ByVal fuWinIni As Long) As Long
