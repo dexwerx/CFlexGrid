@@ -28,10 +28,10 @@ End Function
 
 'Implements ISubclass
 'Private Function ISubclass_SubclassProc(ByVal hWnd As Long, _
-'										ByVal uMsg As Long, _
-'										ByVal wParam As Long, _
-'										ByVal lParam As Long, _
-'										ByVal dwRefData As Long) As Long
+'                                        ByVal uMsg As Long, _
+'                                        ByVal wParam As Long, _
+'                                        ByVal lParam As Long, _
+'                                        ByVal dwRefData As Long) As Long
 '	ISubclass_SubclassProc = DefSubclassProc(hWnd, uMsg, wParam, lParam)
 'End Function
 
