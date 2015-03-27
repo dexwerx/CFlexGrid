@@ -61,11 +61,11 @@ Private Sub Class_Terminate()
     If m_hWnd Then RemoveSubclass m_hWnd, Me
 End Sub
 
-Public Function Attach(hWnd As Long, MinX As Long, MinY As Long, Optional MaxX As Long, Optional MaxY As Long) As Long
+Public Function Attach(Parent As Form, MinX As Long, MinY As Long, Optional MaxX As Long, Optional MaxY As Long) As Long
     m_Min.X = MinX
     m_Min.Y = MinY
     m_Max.X = MaxX
     m_Max.Y = MaxY
-    Attach = SetSubclass(hWnd, Me)
-    If Attach Then m_hWnd = hWnd
+    Attach = SetSubclass(Parent.hWnd, Me)
+    If Attach Then m_hWnd = Parent.hWnd
 End Function
