@@ -66,6 +66,6 @@ Public Function Attach(Parent As Form, MinX As Long, MinY As Long, Optional MaxX
     m_Min.Y = MinY
     m_Max.X = MaxX
     m_Max.Y = MaxY
-    Attach = SetSubclass(Parent.hWnd, Me)
-    If Attach Then m_hWnd = Parent.hWnd
+    m_hWnd = Parent.hWnd
+    Attach = SetSubclass(m_hWnd, Me)
 End Function
